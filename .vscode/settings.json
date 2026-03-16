@@ -1,0 +1,28 @@
+{
+    "sqltools.connections": [
+        {
+            "name": "BigQuery Public Datasets",
+            "driver": "BigQuery",
+            "projectId": "${env:GOOGLE_CLOUD_PROJECT}",
+            "keyFilename": "${env:GOOGLE_APPLICATION_CREDENTIALS}",
+            "dataset": "bigquery-public-data"
+        }
+    ],
+    "sqltools.useNodeRuntime": true,
+    "sqltools.autoOpenSessionFiles": false,
+    "sqltools.results.limit": 500,
+    "sqltools.format": {
+        "language": "sql",
+        "indentSize": 4
+    },
+    "[sql]": {
+        "editor.defaultFormatter": "mtxr.sqltools"
+    },
+    "files.associations": {
+        "*.sql": "sql"
+    },
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}"
+    ]
+}

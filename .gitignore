@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# Output charts
+output/
+*.png
+
+# VS Code (keep .vscode/settings.json and extensions.json)
+.vscode/*.log
+
+# Environment
+.env
+*.env
+
+# macOS
+.DS_Store
+
+# pytest cache
+.pytest_cache/
+.coverage
+htmlcov/
